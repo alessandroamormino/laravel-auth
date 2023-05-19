@@ -20,16 +20,23 @@ aside{
   .top, .bottom{
     display: flex;
     flex-flow: column;
-    gap: 1em;
     // flex
-    padding: 1em 0;
   }
   .icon-container{
+    padding: 1em;
     .side-icon{
       display: block;
       width: 30px;
       height: 30px;
       margin: 0 auto;
+    }
+  }
+  .icon-container:hover{
+    background-color: #161721;
+    a{
+      svg{
+        fill: #fff;
+      }
     }
   }
 }
