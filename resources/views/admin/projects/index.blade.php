@@ -18,7 +18,7 @@
   <tbody>
 
     @foreach($projects as $project)
-    <tr >
+    <tr>
       <td>{{$project->title}}</td>
       <td>{{$project->content}}</td>
       <td>{{$project->slug}}</td>
