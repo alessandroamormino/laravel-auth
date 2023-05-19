@@ -29,7 +29,7 @@
 <body>
   <div class="ui">
     @include('partials/navbar')
-    <main>
+    <main class="main">
         @yield('content')
     </main>
   </div>
