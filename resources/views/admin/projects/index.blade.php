@@ -66,5 +66,8 @@
   </tbody>
 </table>
 
+<button class="btn">
+  <a href="{{route('admin.projects.create')}}">Aggiungi Progetto</a>
+</button>
 
 @endsection
