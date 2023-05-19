@@ -1,1 +1,38 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+// Assets
+.ui{
+  display: flex;
+  background-color: #2A2D3E;
+}
+
+// Nav
+aside{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  // flex
+  width: 70px;
+  height: 100vh;
+  background-color: #1B1E2B;
+  .top, .bottom{
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    // flex
+    padding: 1em 0;
+  }
+  .icon-container{
+    .side-icon{
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+    }
+  }
+}
+
+main {
+  color: white;
+}
