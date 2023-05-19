@@ -6,6 +6,8 @@
 .ui{
   display: flex;
   background-color: #2A2D3E;
+  width: 100vw;
+  height: 100dvh;
 }
 
 body{
@@ -49,6 +51,7 @@ main{
   // tolgo la dimensione della sidebar dalla larghezza del main
   width: calc(100% - 70px);
   padding: 2em;
+  overflow: auto;
   .container-centered{
     display: flex;
     flex-flow: column nowrap;
