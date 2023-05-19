@@ -76,7 +76,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        //
+        return view('admin.projects.edit', compact('project'));
     }
 
     /**
@@ -88,7 +88,17 @@ class ProjectController extends Controller
      */
     public function update(Request $request, Project $project)
     {
-        //
+        //richiamo la funzione per validare i dati e invirli al db
+        $this->validation($request);
+        // memorizzo i dati del form
+        $formData = $request->all();
+        // aggiorno i dati 
+        $project->update($formData);
+        // salvo il record
+        $project->save();
+
+        // faccio il redirect alla show relativa al progetto modificato
+        return redirect()->route('admin.projects.show', $project);
     }
 
     /**
@@ -99,7 +109,11 @@ class ProjectController extends Controller
      */
     public function destroy(Project $project)
     {
-        //
+        //cancello il progetto
+        $project->delete();
+
+        //faccil il redirect alla pagina con tutti i progetti 
+        return redirect()->route('admin.projects.index');
     }
 
     // creo una funzione che mi gestisca gli errori nei form
