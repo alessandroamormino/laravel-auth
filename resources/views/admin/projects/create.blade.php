@@ -3,7 +3,7 @@
 @section('content')
 <h3>Aggiungi un Progetto</h3>
 <div class="container ms-5 mt-5">
-  <form action="{{route('admin.projects.create')}}" method="POST">
+  <form action="{{route('admin.projects.store')}}" method="POST">
     @csrf
   
     <div class="row mb-3">
