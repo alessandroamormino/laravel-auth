@@ -35,4 +35,10 @@
     </li>
     @endguest
 </ul>
+
+<hr>
+
+<ul>
+  <li><a href="{{route('admin.projects.index')}}">Mostra tutti i progetti</a></li>
+</ul>
 @endsection

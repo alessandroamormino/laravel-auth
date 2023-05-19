@@ -25,7 +25,7 @@
 <body>
   <div class="ui">
     @include('partials/navbar')
-    <main>
+    <main class="admin">
         @yield('content')
     </main>
   </div>
