@@ -2,9 +2,6 @@
 
 
 // Assets
-body {
-  color: white;
-}
 
 .ui{
   display: flex;
@@ -39,6 +36,7 @@ aside{
 
 // Admin page
 main.admin{
+  color: white;
   table{
     font-size: .9em;
   }

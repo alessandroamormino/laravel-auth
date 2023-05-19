@@ -34,7 +34,7 @@
         </div>
     </li>
     @endguest
-</ul>
+  </ul>
 
 <hr>
 
