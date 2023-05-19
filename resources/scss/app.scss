@@ -112,7 +112,10 @@ main.login{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    // flex
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     .card-dark{
       background-color: #1B1D2A;
       color: #abb1b8;
