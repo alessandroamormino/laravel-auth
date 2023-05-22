@@ -93,6 +93,7 @@ class ProjectController extends Controller
         // memorizzo i dati del form
         $formData = $request->all();
         // aggiorno i dati 
+        $formData['slug'] = Str::slug($formData['title'], '-');
         $project->update($formData);
         // salvo il record
         $project->save();
