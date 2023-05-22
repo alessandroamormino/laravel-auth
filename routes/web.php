@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PageController::class, 'index'])->name('home.index');
-Route::get('admin/login', [PageController::class, 'login'])->name('admin.login');
+// Route::get('admin/login', [PageController::class, 'login'])->name('admin.login');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
