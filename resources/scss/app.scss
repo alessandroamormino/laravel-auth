@@ -170,9 +170,7 @@ main.login{
     justify-content: center;
     align-items: center;
     // flex
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100vh;
     .card-dark{
       background-color: #1B1D2A;
       color: #abb1b8;
